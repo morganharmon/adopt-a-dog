@@ -17,3 +17,6 @@ export async function getDog(id) {
     return response.data;    
 }
 
+export function findById(id, data) {
+    return data.find((item) => item.id === id);
+}
